@@ -1,4 +1,98 @@
-baseURL = 'https://alecui.ro/'
-languageCode = 'en-us'
-title = 'Alecui'
-theme = "overanalytcl"
+baseURL = "https://alecui.ro/"
+languageCode = "en-us"
+title = "Alecu Ștefan-Iulian"
+theme = "anubis2"
+
+[author]
+name = "Alecu Ștefan-Iulian"
+email = "uneven-shiver@protonmail.com"
+location = "România"
+
+[params]
+colorThemeSwitcher = true
+colorTheme = "auto"
+
+readMore = false
+readNextPosts = 2
+copyCodeButton = true
+rssAsSocialIcon = true
+locale = "en-us"
+math = false
+toc = true
+
+social = [
+    { id = "github", name = "overanalytcl" },
+    { id = "mastodon", url = "https://hachyderm.io/@overanalytcl" },
+]
+
+[[menu.main]]
+identifier = "home"
+name = "Home"
+url = "/"
+weight = 1
+
+[[menu.main]]
+identifier = "about"
+name = "About"
+url = "/about/"
+weight = 2
+
+[[menu.main]]
+identifier = "tags"
+name = "Tags"
+url = "/tags/"
+weight = 3
+
+[[menu.main]]
+name = "Archive"
+identifier = "archive"
+url = "/posts/"
+weight = 4
+
+[languages]
+[languages.en]
+languageName = "English"
+
+[languages.ro]
+languageName = "Română"
+
+[[languages.ro.menu.main]]
+identifier = "home"
+name = "Acasă"
+url = "/ro/"
+weight = 1
+
+[[languages.ro.menu.main]]
+identifier = "about"
+name = "Despre"
+url = "/ro/about/"
+weight = 2
+
+[[languages.ro.menu.main]]
+identifier = "tags"
+name = "Etichete"
+url = "/ro/tags/"
+weight = 3
+
+[[languages.ro.menu.main]]
+identifier = "archive"
+name = "Arhivă"
+url = "/ro/posts/"
+weight = 4
+
+[languages.ro.params]
+languageCode = "ro-ro"
+
+[taxonomies]
+category = "categories"
+tag = "tags"
+author = "authors"
+
+[markup]
+defaultMarkdownHandler = 'goldmark'
+
+[markup.goldmark.renderer]
+unsafe = true
+
+[markup.highlight]
+style = 'rose-pine'
